@@ -274,15 +274,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 4845d4d5f7033d7469fcdef8e8d10690, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.8021
+      value: 1.211572
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 4845d4d5f7033d7469fcdef8e8d10690, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.5585
+      value: 2.587411
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 4845d4d5f7033d7469fcdef8e8d10690, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.37
+      value: 8.3331
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 4845d4d5f7033d7469fcdef8e8d10690, type: 3}
       propertyPath: m_LocalPosition.y
@@ -685,6 +685,52 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &870318525
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 870318527}
+  - component: {fileID: 870318526}
+  m_Layer: 0
+  m_Name: Marcador
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &870318526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870318525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46b616032f1ebbe4290968c65271a75e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Marcador
+  puntosAzul: 0
+  puntosRojo: 0
+--- !u!4 &870318527
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870318525}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.3187, y: 0.33641, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &981467096
 GameObject:
   m_ObjectHideFlags: 0
@@ -696,6 +742,7 @@ GameObject:
   - component: {fileID: 981467098}
   - component: {fileID: 981467097}
   - component: {fileID: 981467099}
+  - component: {fileID: 981467100}
   m_Layer: 0
   m_Name: Square (1)
   m_TagString: Untagged
@@ -823,6 +870,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &981467100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981467096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c9db2861794702459089747031f4d72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Gol
+  puntoParaRojo: 0
 --- !u!1 &1164999937
 GameObject:
   m_ObjectHideFlags: 0
@@ -834,6 +894,7 @@ GameObject:
   - component: {fileID: 1164999939}
   - component: {fileID: 1164999938}
   - component: {fileID: 1164999940}
+  - component: {fileID: 1164999941}
   m_Layer: 0
   m_Name: Square (3)
   m_TagString: Untagged
@@ -961,6 +1022,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1164999941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1164999937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c9db2861794702459089747031f4d72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Gol
+  puntoParaRojo: 1
 --- !u!1 &1516596890 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2253911629886400664, guid: 7e83d00b05687cb4aa9da0724a6bf5f9, type: 3}
@@ -1114,7 +1188,7 @@ Transform:
   m_GameObject: {fileID: 1600389789}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5609, y: -4.0047, z: 0}
+  m_LocalPosition: {x: -0.5609, y: -4.08, z: 0}
   m_LocalScale: {x: 19.4783, y: 0.3894, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1510,3 +1584,4 @@ SceneRoots:
   - {fileID: 1970922928}
   - {fileID: 829949614}
   - {fileID: 1600389791}
+  - {fileID: 870318527}

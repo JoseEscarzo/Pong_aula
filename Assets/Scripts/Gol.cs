@@ -7,6 +7,8 @@ public class Gol : MonoBehaviour
     void OnTriggerEnter2D(Collider2D otro)
     {
         if (!otro.CompareTag("Bola")) return;
+        if (Marcador.Instance.terminado) return;
+
         Marcador.Instance.Punto(puntoParaRojo);
         otro.GetComponent<Bola>().Lanzar();
     }

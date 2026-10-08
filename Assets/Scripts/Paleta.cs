@@ -9,6 +9,8 @@ public class Paleta : MonoBehaviour
 
     void Update()
     {
+        if (Marcador.Instance != null && Marcador.Instance.terminado) return;
+
         float mov = 0f;
         if (Input.GetKey(teclaArriba)) mov = 1f;
         if (Input.GetKey(teclaAbajo)) mov = -1f;
